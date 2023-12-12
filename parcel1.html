@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Details</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="parcel.css ">
+    <link rel="stylesheet" href="createacc.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+    <a href="home.html"><img id="logo" src="logo.png" alt="Indian Postal Service" style="text-align: left;"></a>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="drop()">Services</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="locpost.html">Locate Post Office</a>
+          <a href="findpin.html">Find Pincode</a>
+          <a href="schemes.html">Savings Schemes</a>
+          <a href="complaint.html">Complaints</a>
+        </div>
+        </div> 
+        <a href="track.html">Track Shipment</a>
+        <a href="stamps.html">Stamps</a>
+        <span id="staffNamePlaceholder"></span>
+    </div>
+    </header>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    <main>
+        <div id="boxes">
+            
+            <div class="form-container2"style="width: 350px;">
+                <div id="update">
+                    <h2>Parcel Status</h2>
+                    <form action="prsstatserv" style="width: 350px;">
+					<label for="tid">Enter Tracking ID:</label>
+                    <input type="number" id="tid" name="tid" placeholder="Tracking ID">
+                    <label for="hid">Enter Hub ID:</label>
+                    <input type="number" id="hid" name="hid" placeholder="Hub's ID">
+                    <br><br>
+                    <label for="cstat">Status</label>
+                    <select name="cstat">
+                        <option name="cstat" value="" disabled selected>Current Status</option>
+                        <option name="cstat" value="Still in Hub">Still in Hub</option>
+                        <option name="cstat"value="delivered">Delivered</option>
+                        <option name="cstat"value="returned">Returned</option>
+                    </select>
+                    <br><br>
+                    <button type="submit" style="margin-right: 10%;">Submit</button>
+                    <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Register No</h4>
+                    <p>2022115063<br>2022115086<br>2022115092</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>r.ajaykumars@gmail.com</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="contact-item">
+                    <h4>Submitted by:</h4>
+                    <p>Vijay K G<br>Ajay Kumar R<br>Hemachandar K</p>
+                </div>
+            </div>
+        </div>        
+    </footer>
+  </body>
+  </html>

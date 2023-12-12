@@ -1,0 +1,25 @@
+body {
+    font-family: 'Aldrich';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, rgb(182, 80, 80), rgb(195, 26, 3)); 
+}
+
+div {
+    max-width: 400px;
+    padding: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5; 
+    border-radius: 10px;
+    position: relative;
+}
+
+h1, p {
+    text-align: center;
+    color: #333; 
+}
+
+

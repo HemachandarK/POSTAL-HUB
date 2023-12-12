@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Details</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="parcel.css ">
+    <link rel="stylesheet" href="createacc.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+    <a href="home.html"><img id="logo" src="logo.png" alt="Indian Postal Service" style="text-align: left;"></a>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="drop()">Services</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="locpost.html">Locate Post Office</a>
+          <a href="findpin.html">Find Pincode</a>
+          <a href="schemes.html">Savings Schemes</a>
+          <a href="complaint.html">Complaints</a>
+        </div>
+        </div> 
+        <a href="track.html">Track Shipment</a>
+        <a href="stamps.html">Stamps</a>
+        <span id="staffNamePlaceholder"></span>
+    </div>
+    </header>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    <main>
+        <div id="boxes">
+            <div class="form-container1" style="width: 500px;">
+                <div id="create">
+                    <h2>Parcel Details</h2><br>
+                    <form action="crparserv" style="width: 500px;">
+					<label for="pstype">Select The Type:</label>
+					<select name="pstype">
+						<option name="pstype" value="" disabled selected>Select the type</option>
+                        <option name="pstype"value="300">Single Card</option>
+                        <option name="pstype"value="301">Reply Card</option>
+                        <option name="pstype"value="302">Meghdoot Post Card</option>
+                        <option name="pstype"value="303">Printed Card (Postcards containing printed communication)</option>
+                        <option name="pstype"value="304">Inland Letter Card</option>
+                        <option name="pstype"value="305">Letters</option>
+                        <option name="pstype"value="306">Book Pattern and Sample Packets</option>
+                        <option name="pstype"value="307">Book Packets containing printed Books</option>
+                        <option name="pstype"value="308">Book Packets containing periodicals</option>
+                        <option name="pstype"value="309">Blind Literature packets</option>
+                        <option name="pstype"value="310">Parcels</option>
+                        <option name="pstype"value="311">Postal Identity Cards</option>
+					</select>
+					
+                    <label for="sender">Enter Sender's Name:</label><br>
+                    <input type="text" id="sender" name="sender" placeholder="Sender's Name" style="width:450px">
+                    <br>
+                    <label for="receiver">Enter Receiver's Name:</label><br>
+                    <input type="text" id="receiver" name="receiver" placeholder="Receiver's Name" style="width:450px">
+                    <br>
+                    
+                    <label for="radd">Enter Receiver's Address:</label><br>
+                    <input type="text" id="radd" name="radd" placeholder="Receiver's Address" style="width:450px">
+                    <br>
+                    <label for="rpin">Enter Receiver's Pincode:</label><br>
+                    <input type="number" id="rpin" name="rpin" placeholder="Receiver's Pincode">
+                    <br>
+                    <label for="pid">Enter Post-office ID:</label>
+                    <input type="number" id="pid" name="pid" placeholder="Post-office's ID">
+                    <br>
+                    <label for="hid">Enter Hub ID:</label>
+                    <input type="number" id="hid" name="hid" placeholder="Hub's ID">
+                    <br>
+                    
+                    <br><br>
+                    <label for="cstat">Current Status</label>
+                    <select name="cstat">
+                        <option name="cstat" value="" disabled selected>Status</option>
+                        <option name="cstat" value="not yet departed">Not yet departed</option>
+                        <option name="cstat" value="departed">Departed</optionname>
+                    </select>
+                    <br><br>
+                    <button type="submit" style="margin-right: 10%;">Upload</button>
+                    <br>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Register No</h4>
+                    <p>2022115063<br>2022115086<br>2022115092</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>r.ajaykumars@gmail.com</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="contact-item">
+                    <h4>Submitted by:</h4>
+                    <p>Vijay K G<br>Ajay Kumar R<br>Hemachandar K</p>
+                </div>
+            </div>
+        </div>        
+    </footer>
+  </body>
+  </html>

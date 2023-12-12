@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track your Package</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="complaint.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <a href="home.html"><img id="logo" src="logo.png" alt="Indian Postal Service" style="text-align: left;"></a>
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="drop()">Services</button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="locpost.html">Locate Post Office</a>
+                    <a href="findpin.html">Find Pincode</a>
+                    <a href="schemes.html">Savings Schemes</a>
+                    <a href="complaint.html">Complaints</a>
+                </div>
+            </div>
+            <a href="track.html">Track Shipment</a>
+            <a href="stamps.html">Stamps</a>
+        </div>
+    </header>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    <main>
+        <section id="shipmentTracking">
+            <h2 style="margin-left: 10%;">Shipment Tracking</h2>
+            <form id="trackingForm" action="trackserv">
+                <div id="track" style="margin-left: 30%;">
+                    <label for="trackingNumber">Tracking Number:</label>
+                    <input type="number" id="trackingNumber"name="trackingNumber" placeholder="Enter Tracking Number" style="width: 50%;">
+                </div>
+                <button onclick="upd()" style="margin-right: 25%;">Track Shipment</button>
+            </form>
+        </section>
+    </main>
+    
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Register No</h4>
+                    <p>2022115063<br>2022115086<br>2022115092</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>r.ajaykumars@gmail.com</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="contact-item">
+                    <h4>Submitted by:</h4>
+                    <p>Vijay K G<br>Ajay Kumar R<br>Hemachandar K</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

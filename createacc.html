@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="createacc.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+    <a href="home.html"><img id="logo" src="logo.png" alt="Indian Postal Service" style="text-align: left;"></a>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="drop()">Services</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="locpost.html">Locate Post Office</a>
+          <a href="findpin.html">Find Pincode</a>
+          <a href="schemes.html">Savings Schemes</a>
+          <a href="complaint.html">Complaints</a>
+        </div>
+        </div> 
+        <a href="track.html">Track Shipment</a>
+        <a href="stamps.html">Stamps</a>
+        <span id="staffNamePlaceholder"></span>
+    </div>
+    </header>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    <main>
+            <div class="form-container">
+                <div id="create">
+                    <h2>Account Details</h2>
+                    <form action="crstserv">
+                    <label for="sid">Scheme</label>
+                    <select name="sid">
+                        <option name="sid" value="" disabled selected>Select the scheme</option>
+                        <option name="sid"value="123">Post Office Savings Account</option>
+                        <option name="sid"value="124">National Savings Recurring Deposit Account</option>
+                        <option name="sid"value="125">National Savings Time Deposit Account</option>
+                        <option name="sid"value="126">National Savings Monthly Income Account</option>
+                        <option name="sid"value="127">Senior Citizens Savings Scheme Account</option>
+                        <option name="sid"value="128">Public Provident Fund Account</option>
+                        <option name="sid"value="129">Sukanya Samriddhi Account</option>
+                        <option name="sid"value="130">Kisan Vikas Patra</option>
+                        <option name="sid"value="131">National Savings Certificates</option>
+                    </select>
+                    <br>
+                    <label for="pid">Enter Post-office ID:</label>
+                    <input type="number" id="pid" name="pid" placeholder="Post-office's ID">
+                    <br>
+                    <label for="uid">Enter User ID:</label>
+                    <input type="number" id="uid" name="uid" placeholder="User's ID">
+                    <label for="bl">Enter Balance:</label>
+                    <input type="number" id="bl" name="bl" placeholder="Balance">
+                    <br><br>
+                    <button type="submit">Create</button>
+                    <br>
+                    </form>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Register No</h4>
+                    <p>2022115063<br>2022115086<br>2022115092</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>r.ajaykumars@gmail.com</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="contact-item">
+                    <h4>Submitted by:</h4>
+                    <p>Vijay K G<br>Ajay Kumar R<br>Hemachandar K</p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+  </body>
+  </html>

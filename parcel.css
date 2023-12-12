@@ -1,0 +1,54 @@
+main {
+    font-family: 'Aldrich';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  #boxes{
+    gap: 3%;
+  }
+
+  .form-container1 {
+    width: 50%;
+    padding: 2%;
+    background-color: #fff;
+    float: left;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-container2 {
+    width: 30%;
+    padding: 2%;
+    background-color: #fff;
+    float: right;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input[type=number], input[type=text] {
+    font-family: 'Aldrich';
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  button {
+    font-family: 'Aldrich';
+    float: right;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transition: 0.3s;
+    background-color: #555;
+  }

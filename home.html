@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postal Service</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+    <a href="home.html"><img id="logo" src="logo.png" alt="Indian Postal Service" style="text-align: left;"></a>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="drop()">Services</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="locpost.html">Locate Post Office</a>
+          <a href="findpin.html">Find Pincode</a>
+          <a href="schemes.html">Savings Schemes</a>
+          <a href="complaint.html">Complaints</a>
+        </div>
+        </div> 
+        <a href="track.html">Track Shipment</a>
+        <a href="stamps.html">Stamps</a>
+        <button class="login-button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+      </div>
+    </header>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <div id="id01" class="modal">
+  
+      <form class="modal-content animate" action="loginserv" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="profile.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <button id="user-login"name="user-login" type="submit">User Login</button>
+          <button id="staff-login"name="staff-login" type="submit">Staff Login</button>
+          <label style="float: left;">
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        <br><br><br>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border: none; outline: none;">Cancel</button>
+          <span class="snp">New to this website? <a onclick="document.getElementById('id2').style.display='block'" style="color: blue; cursor: pointer;text-decoration: underline;">Sign Up</a></span>
+        </div>
+      </form>
+    </div>
+
+    <div id="id2" class="modal">
+      <form class="modal-content animate" action="regserv">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id2').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+
+          <label for="fname"><b>First Name</b></label>
+          <input type="text" placeholder="Enter First Name" name="fname" required>
+
+          <label for="lname"><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" name="lname">
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <label for="gender"><b>Gender</b></label>
+          <input type="text" placeholder="Enter your gender" name="gender" required>
+
+          <label for="add"><b>Address</b></label>
+          <input type="text" placeholder="Enter your Address" name="add" required>
+    
+          <label for="pincode"><b>Pincode</b></label>
+          <input type="number" placeholder="Enter Pin Code" name="pincode" required>
+    
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id2').style.display='none'" class="cancelbtn2">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <main>
+        <img src="bck.jpg" id="bckimg">
+        <div id="content">
+          <h1>Postal Services</h1>
+          <p>Neither snow nor rain nor heat nor gloom of night stays these couriers from the swift completion of their appointed rounds</p>
+      </div>
+    </main>
+    <div class="bbox">
+        <div id="column">
+          <h2>Track your Package</h2>
+          <p>Easily track the current status of your package with just its credentials</p>
+        </div>
+        <div id="column">
+          <h2>Savings Schemes</h2>
+          <p>Learn about all the savings schemes available</p>
+        </div>
+        <div id="column">
+          <h2>Find Post Office</h2>
+          <p>With location access, you could easily get the details about the nearby post office to you</p>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="bbox" style="width: 100%; padding:0;"><h2 style="margin-left: 10%;">Other Services and Current Updates</h2></div>
+    <div class="bottom-space">
+      <div class="icon-container">
+          <img src="calci.png" alt="Calculator" onclick="location.href='interestcalc.html'">
+          <span>Interest Calculator</span>
+      </div>
+      <div class="attribute-box" id="attribute-box">
+          <div id="news" class="attribute" onclick="showContent('news')">News</div>
+
+		<form action="dashserv">
+          <button style="border:none;background-color:white;font-size:16px;"type="submit" id="dashboard" class="attribute">Performance Dashboard</button> </form>
+      </div>
+  </div>
+  
+  <div id="news-content" class="content">
+    
+    <a id="newsc"></a>
+</div>
+  
+    <br><br><br><br>
+    
+    <footer>
+      <div class="footer-content">
+          <div class="contact-info">
+              <div class="contact-item">
+                  <h4>Register No</h4>
+                  <p>2022115063<br>2022115086<br>2022115092</p>
+              </div>
+              <div class="vertical-line"></div>
+              <div class="contact-item">
+                  <h4>Email</h4>
+                  <p>r.ajaykumars@gmail.com</p>
+              </div>
+              <div class="vertical-line"></div>
+              <div class="contact-item">
+                  <h4>Submitted by:</h4>
+                  <p>Vijay K G<br>Ajay Kumar R<br>Hemachandar K</p>
+              </div>
+          </div>
+      </div> 
+      
+  </footer>
+  
+<script>
+    // Fetch data from the newsserv servlet
+    fetch('newsserv')
+        .then(response => response.json())
+        .then(data => {
+            // Display news in the h3 tag
+            const newsContent = document.getElementById('newsc');
+
+            if (Array.isArray(data) && data.length > 0) {
+                // Join the links and set as inner HTML
+                const newsLinks = data.map(link => `<a href="${link}" target="_blank">${link}</a>`);
+                newsContent.innerHTML = newsLinks.join("<br><br>");
+            } else if (Array.isArray(data) && data.length === 0) {
+                newsContent.textContent = 'No news available';
+            } else {
+                console.error('Invalid data format:', data);
+            }
+
+            // Show the news content div
+            newsContent.style.display = 'block';
+        })
+        .catch(error => console.error('Error:', error));
+</script>
+
+
+</body>
+
+</html>

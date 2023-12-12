@@ -1,0 +1,68 @@
+header{
+    background-color: #ddd;
+    color: white;
+}
+
+footer{
+  background-color: #ddd;
+  color: black;
+}
+
+.footer-content{
+  background-color: #ddd;
+}
+
+.progress-bar{
+  background: darkred;
+}
+
+button {
+    font-family: 'Aldrich';
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+button:hover{
+  cursor: pointer;
+  transform:scale(1.04);
+  transition: 0.3s;
+}
+
+.additional-text {
+    display: none;
+    transition: 1s;
+    background-color: white;
+    margin-top: 10px;
+    max-width: 80vw;
+    max-height: 60vh;
+    overflow: auto;
+  }
+
+#lbckimg {
+    width: 1520px;
+    height:auto;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    z-index: -1;
+  }
+
+  .centered-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -1%);
+    text-align: center;
+    background-color: #ddd; 
+    padding: 40px;
+  }
+
+  .centered-content button {
+    background-color: #db1010;
+    margin: 0;
+    border: 0px;
+    color: white;
+    width:80%;
+    padding:20px;
+  }

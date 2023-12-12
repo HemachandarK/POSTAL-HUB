@@ -1,0 +1,44 @@
+main {
+    font-family: 'Aldrich';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .form-container {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input[type=number], select{
+    font-family: 'Aldrich';
+    width: 100%;
+    color: #333;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  button {
+    font-family: 'Aldrich';
+    float: right;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transition: 0.3s;
+    background-color: #555;
+  }

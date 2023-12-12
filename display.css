@@ -1,0 +1,18 @@
+main {
+    font-family: 'Aldrich';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .form-container {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }

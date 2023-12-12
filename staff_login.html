@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="staff_login.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+    <a href="home.html"><img id="logo" src="logo.png" alt="Indian Postal Service" style="text-align: left;"></a>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="drop()">Services</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="locpost.html">Locate Post Office</a>
+          <a href="findpin.html">Find Pincode</a>
+          <a href="schemes.html">Savings Schemes</a>
+          <a href="complaint.html">Complaints</a>
+        </div>
+        </div> 
+        <a href="track.html">Track Shipment</a>
+        <a href="stamps.html">Stamps</a>
+        <a href="home.html">Logout</a>
+        <span id="staffNamePlaceholder"></span>
+    </div>
+    </header>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    <main>
+		<div id="id01" class="modal">
+            <form class="modal-content animate" action="transerv" method="post">
+
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+
+              <div class="container">
+                    <h1>Create a new transaction</h1>
+                    <p>Please update the transaction details in this form.</p>
+                    <hr>
+
+					<label for="uid"><b>User Id:</b></label>
+                    <input type="number" placeholder="Enter User ID" name="uid">
+                    
+                    <label for="rid"><b>Recipient Id:</b></label>
+                    <input type="number" placeholder="Enter Recipient Id" name="rid">
+
+                    <label for="amt"><b>Amount</b></label>
+                    <input type="number" placeholder="Enter Amount" name="amt">
+
+                    <button type="submit" style="float: right;">Create</button>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border: none; outline: none; float: left;">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="form-container">
+        <div id="left">
+            <h2>Account Details</h2>
+            <form action="stfacserv">
+            <label for="accountNumber">Enter Account Number:</label>
+            <input type="text" id="accountNumber" name="accountNumber" placeholder="Account Number">
+            <button type="submit" style="float: right;">Submit</button>
+            </form>
+            <br>
+            <form>
+            <div id="accno">
+              <label for="uid" style="margin-left: 10%;">Create Transaction:</label><br><br>
+            <button type="button" onclick="document.getElementById('id01').style.display='block'">Create</button>
+            
+        </form>
+        </div>
+        
+        <div id="result-box">
+            <h3>Account Information</h3>
+            
+            <div class="action-box">
+                <h4 style="font-weight: 100;">Create Account</h4>
+                <button type="submit"><a href="createacc.html" style="text-decoration:none;color:white;">Create</a></button>
+            </div>
+            <br><br>
+            <div class="action-box">
+                <h4 style="font-weight: 100;">Update Account</h4>
+                <button type="submit"><a href="update.html" style="text-decoration:none;color:white;">Update</a></button>
+            </div>
+            <br><br>
+            <div class="action-box">
+                <h4 style="font-weight: 100;">Delete Account</h4>
+                <button type="submit"><a href="delete.html" style="text-decoration:none;color:white;">Delete</a></button>
+            </div>
+        </div>
+    <div class="vertical-line1"></div>
+        <div id="right">
+            <h3>Package Information</h3>
+            
+            <div class="action-box">
+                <h4 style="font-weight: 100;">Create Parcel/Post</h4>
+                <button type="submit" ><a href="parcel.html" style="text-decoration:none;color:white; float: right;">Create</a></button>
+            </div>
+            <br><br>
+            <div class="action-box">
+                <h4 style="font-weight: 100;">Update Location</h4>
+                <button type="submit" ><a href="parcel1.html" style="text-decoration:none;color:white; float: right;">Update</a></button>
+            </div><br><br><br><br>
+            <form action="com1serv">
+            <label for="com" style="margin-left: 10%;">Complaints:</label><br><br>
+            <button type="submit"">See</button></form>
+        </div>
+    </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Register No</h4>
+                    <p>2022115063<br>2022115086<br>2022115092</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>r.ajaykumars@gmail.com</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="contact-item">
+                    <h4>Submitted by:</h4>
+                    <p>Vijay K G<br>Ajay Kumar R<br>Hemachandar K</p>
+                </div>
+            </div>
+        </div> 
+    </footer>
+  </body>
+  </html>

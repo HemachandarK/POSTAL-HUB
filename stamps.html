@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamps</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="stamps.css">
+    <link rel="stylesheet" href="complaint.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+    <a href="home.html"><img id="logo" src="logo.png" alt="Indian Postal Service" style="text-align: left;"></a>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="drop()">Services</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="locpost.html">Locate Post Office</a>
+          <a href="findpin.html">Find Pincode</a>
+          <a href="schemes.html">Savings Schemes</a>
+          <a href="complaint.html">Complaints</a>
+        </div>
+        </div> 
+        <a href="track.html">Track Shipment</a>
+        <a href="stamps.html">Stamps</a>
+      </div>
+    </header>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <h2 style="font-family: Aldrich; margin-left: 20%;">Stamps by Year</h2>
+    <main>
+        <form action="stampserv">
+            <ul id="left">
+                <li><button type="submit" name="year" value="2020">2020</button></li><br><br><br>
+                <li><button type="submit" name="year" value="2019">2019</button></li><br><br><br>
+                <li><button type="submit" name="year" value="2018">2018</button></li><br><br><br>
+                <li><button type="submit" name="year" value="2017">2017</button></li><br><br><br>
+                <li><button type="submit" name="year"value="2016">2016</button></li><br><br><br>
+                <li><button type="submit" name="year"value="2015">2015</button></li><br><br><br>
+            </ul>
+            <ul id="right">
+                <li><button type="submit" name="year"value="2014">2014</button></li><br><br><br>
+                <li><button type="submit" name="year"value="2013">2013</button></li><br><br><br>
+                <li><button type="submit" name="year"value="2012">2012</button></li><br><br><br>
+                <li><button type="submit" name="year"value="2011">2011</button></li><br><br><br>
+                <li><button type="submit" name="year"value="2010">2010</button></li><br><br><br>
+                <li><button type="submit" name="year"value="2009">2009</button></li><br><br><br>
+            </ul>
+        </form>
+    </main>
+    <br><br><br><br><br><br><br>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Register No</h4>
+                    <p>2022115063<br>2022115086<br>2022115092</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p>r.ajaykumars@gmail.com</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="contact-item">
+                    <h4>Submitted by:</h4>
+                    <p>Vijay K G<br>Ajay Kumar R<br>Hemachandar K</p>
+                </div>
+            </div>
+        </div>
+        <!--<p style="font-family: Aldrich; text-align: center; background-color: #cb0d0d; color: white;">&copy; 2023 Postal Service. All rights reserved.</p>-->
+    </footer>
+</body>
+</html>
