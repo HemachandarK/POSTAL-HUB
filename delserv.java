@@ -39,11 +39,11 @@ public class delserv extends HttpServlet {
         Connection connection = null;
         PreparedStatement pst = null;
         PreparedStatement pst1 = null;
-        String host = "localhost";
-        String port = "5432";
-        String db_name = "post";
-        String username = "postgres";
-        String password = "postgres";
+        String host="postal.postgres.database.azure.com";
+		String port="5432";
+		String db_name="postgres";
+		String username="post";
+		String password="Phub@2023";
         int accNo = Integer.parseInt(ac);
         int s1 = Integer.parseInt(s);
 
