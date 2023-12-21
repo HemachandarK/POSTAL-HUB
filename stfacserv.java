@@ -41,11 +41,11 @@ public class stfacserv extends HttpServlet {
 		Connection connection=null;
 		java.sql.Statement st=null;
 		java.sql.Statement st1=null;
-		String host="localhost";
+		String host="postal.postgres.database.azure.com";
 		String port="5432";
-		String db_name="post";
-		String username="postgres";
-		String password="postgres";
+		String db_name="postgres";
+		String username="post";
+		String password="Phub@2023";
 		
 try {
 			
